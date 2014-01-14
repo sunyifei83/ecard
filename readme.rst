@@ -7,10 +7,10 @@ ecard 电子贺卡服务平台
     :target: https://coveralls.io/r/wcc526/ecard
 .. image:: https://drone.io/github.com/wcc526/ecard/status.png 
     :target: https://drone.io/github.com/wcc526/ecard/latest
-.. image:: https://pypip.in/v/cloudsafe/badge.png
-    :target: https://crate.io/packages/cloudsafe/
-.. image:: https://pypip.in/d/cloudsafe/badge.png
-    :target: https://crate.io/packages/cloudsafe/
+.. image:: https://pypip.in/v/ecard/badge.png
+    :target: https://crate.io/packages/ecard/
+.. image:: https://pypip.in/d/ecard/badge.png
+    :target: https://crate.io/packages/ecard/
 
 Overview
 --------
