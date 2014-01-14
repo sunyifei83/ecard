@@ -1,8 +1,8 @@
 ecard 电子贺卡服务平台
 ==================
 
-.. image:: https://api.travis-ci.org/wcc526/cloudsafe.png?branch=master
-    :target: http://travis-ci.org/wcc526/cloudsafe
+.. image:: https://api.travis-ci.org/wcc526/ecard.png?branch=master
+    :target: http://travis-ci.org/wcc526/ecard
 .. image:: https://coveralls.io/repos/wcc526/cloudsafe/badge.png?branch=master
     :target: https://coveralls.io/r/wcc526/cloudsafe
 .. image:: https://drone.io/github.com/wcc526/cloudsafe/status.png 
