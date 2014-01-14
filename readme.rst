@@ -3,10 +3,10 @@ ecard 电子贺卡服务平台
 
 .. image:: https://api.travis-ci.org/wcc526/ecard.png?branch=master
     :target: http://travis-ci.org/wcc526/ecard
-.. image:: https://coveralls.io/repos/wcc526/cloudsafe/badge.png?branch=master
-    :target: https://coveralls.io/r/wcc526/cloudsafe
-.. image:: https://drone.io/github.com/wcc526/cloudsafe/status.png 
-    :target: https://drone.io/github.com/wcc526/cloudsafe/latest
+.. image:: https://coveralls.io/repos/wcc526/ecard/badge.png?branch=master
+    :target: https://coveralls.io/r/wcc526/ecard
+.. image:: https://drone.io/github.com/wcc526/ecard/status.png 
+    :target: https://drone.io/github.com/wcc526/ecard/latest
 .. image:: https://pypip.in/v/cloudsafe/badge.png
     :target: https://crate.io/packages/cloudsafe/
 .. image:: https://pypip.in/d/cloudsafe/badge.png
@@ -100,7 +100,6 @@ Thanks to
 --------
 
 * my teachers `@高能老黄牛 <http://weibo.com/u/2406562641>`_ `@crist齐 <http://weibo.com/u/1402163021>`_
-* my friends `@evan-css <http://weibo.com/evancss>`_ `@Mario Vilas <https://github.com/MarioVilas>`_ `@cr0hn <https://github.com/cr0hn>`_
 
 .. image:: https://d2weczhvl823v0.cloudfront.net/wcc526/cloudsafe/trend.png
     :alt: Bitdeli badge
