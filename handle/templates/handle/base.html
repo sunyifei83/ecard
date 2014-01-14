@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load bootstrap_toolkit %}
+{% load url from future %}
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>电子贺卡服务平台</title>
+<meta name="description" content="">
+<meta name="author" content="Dylan Verheul">
+<link href="http://libs.baidu.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://lib.sinaapp.com/js/bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
+<style type="text/css">
+body {
+    padding-top: 60px;
+}
+</style>
+<!--[if lt IE 9]>
+    <script src="/static/handle/js/html5shiv.js"></script>
+    <![endif]-->
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+{% block extra_head %}
+{% endblock %}
+
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="/">
+                <strong>
+                    电子贺卡服务平台
+                </strong>
+            </a>
+            {% block extra_navbar %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+{% block content %}Empty page{% endblock %}
+<div class="container">
+
+    {% bootstrap_messages %}
+
+
+    <p><hr></p>
+
+    <footer class="row">
+        <center>
+            <div class="span12" style="text-align:center">
+                <p>
+                &copy; <a href="http://www.ihep.cas.cn/jgsz/kyxt/div7/">中科院高能所计算中心</a> 2014|
+                <a href="http://weibo.com/u/3902953948">官方微博</a>
+                </p>
+            </div>
+        </center>
+    </footer>
+
+</div> <!-- container -->
+
+{% block extra_script %}
+{% endblock %}
+
+</body>
+</html>

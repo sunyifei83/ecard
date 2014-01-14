@@ -1,0 +1,82 @@
+{% extends "handle/base.html" %}
+{% block extra_head %}
+<link rel="stylesheet" href="/static/handle/css/basic.css" type="text/css" />
+<link rel="stylesheet" href="/static/handle/css/galleriffic-2.css" type="text/css" />
+
+{% if sendok %}
+<link rel="stylesheet" href="/static/handle/css/notify-style.css" type="text/css" />
+{% endif %}
+
+<style type="text/css"> 
+img{
+    height:60%;
+}
+body{
+    padding-top:60px;
+}
+</style>
+
+{% endblock %}
+
+{% block extra_navbar %}
+<ul class="nav pull-right">
+    <li> <a class="brand" href="#">您好！</a> </li>
+    <li><a class="brand" href="#">{{ name }}</a></li>
+    <li> <a class="brand" href="#">{{ email }}</a> </li>
+    <li> <a class="brand" href="/logout/">退出</a> </li>
+</ul>
+{% endblock %}
+{% block content %}
+<div class="container">
+{% if sendok %}
+<div class="kepu_nav_bar">
+</div>
+{% endif %}
+<div id="page">
+    <div id="container" style="height:900px;">
+        <div class="hero-unit" style="height:400px;background-repeat:no-repeat;background-image:url(/static/handle/use-img/{{ pic }}.jpg);">
+        </div>
+        <form class="form-horizontal" action="/preview/" method="post">{% csrf_token %}
+            <fieldset>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">收件人Email</label>
+                    <div class="controls">
+                        <input type="hidden" name="pic" value="{{ pic }}">
+                        <input value="{{ email }}" name="email" type="text" id="inputEmail" placeholder="Email">
+<!--                        <input value="wengcc@ihep.ac.cn" name="email" type="text" id="inputEmail" placeholder="Email">-->
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputPassword">祝福内容</label>
+                    <div class="controls">
+                        <textarea rows="5" name="greetings" class="field span6">朋友，您好;
+                  新的一年到，祝福不能少，一祝身体好，礼物扛得了；二祝心情好，总是没烦恼；三祝节日好，新年快乐不得了！
+                 {{ name }} </textarea>
+                        <span class="help-block">(后台会为您自动排版)</span>
+                    </div>
+                </div>
+
+                <div class="row" style="height:100px;"> </div>
+                <div class="form-actions">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-primary">预览/preview</button>
+                        <a href="/select_ecard" class="btn">返回/return</a>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}
+{% block extra_script %}
+{% if sendok %}
+<script type="text/javascript" src="/static/handle/js/jquery-notify.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+        notify('贺卡发送成功', 'alert-success');
+          });
+</script>
+{% endif %}
+{% endblock %}
+

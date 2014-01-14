@@ -1,0 +1,45 @@
+{% extends "handle/base.html" %}
+{% block extra_head %}
+<link rel="stylesheet" href="/static/handle/css/basic.css" type="text/css" />
+<link rel="stylesheet" href="/static/handle/css/galleriffic-2.css" type="text/css" />
+
+<style type="text/css"> 
+img{
+    height:60%;
+}
+body{
+    padding-top:60px;
+}
+</style>
+{% endblock %}
+
+{% block extra_navbar %}
+<ul class="nav pull-right">
+    <li> <a class="brand" href="#">您好！</a> </li>
+    <li><a class="brand" href="#">{{ name }}</a></li>
+    <li> <a class="brand" href="#">{{ email }}</a> </li>
+    <li> <a class="brand" href="/logout/">退出</a> </li>
+</ul>
+{% endblock %}
+{% block content %}
+<div class="container">
+<div id="page">
+    <div id="container" style="height:600px;">
+        <div class="hero-unit" style="height:400px;background-repeat:no-repeat;background-image:url(/static/handle/pre-img/{{ pic }}.jpg);">
+        </div>
+        <form class="form-horizontal">
+            <fieldset>
+                <div class="controls">
+                    <a id="sendpic" href="/send/{{ pic }}" class="btn btn-large btn-danger">发送/send</a> 
+                    <a href="/tmake/{{ pic }}" class="btn btn-large">返回/return</a> 
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</div>
+
+{% endblock %}
+{% block extra_script %}
+{% endblock %}
+
