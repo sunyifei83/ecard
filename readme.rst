@@ -14,16 +14,13 @@ ecard 电子贺卡服务平台
 
 Overview
 --------
-CloudSafe 云安全扫描平台
-which use the `golismero <https://github.com/golismero/golismero>`_ for the bug scan
+ecard 电子贺卡服务平台
+用来在线发送自定义的电子贺卡
 
-this web ui is write by django,only need python environment
-but the scan tools is basic golismero,make sure you are qualified ,like install
-nmap,sqlmap and so on,the os system is kali or backtrack is better!
 
 Requirements
 --------
-- os system: Backtrack5 R3 or kali,kali is better,because need the tools on this system
+- os system:linux ubuntu
 - python 2.6 or 2.7
 - django (1.5+)
 
@@ -31,18 +28,14 @@ Requirements
 Sceenshots
 --------
 
-* The basic login ui like:
-.. image:: https://raw.github.com/wcc526/cloudsafe/master/docs/img/screenshots/login.png
-* The results like:
-.. image:: https://raw.github.com/wcc526/cloudsafe/master/docs/img/screenshots/results.png
-* The admin like:
-.. image:: https://raw.github.com/wcc526/cloudsafe/master/docs/img/screenshots/admin.png
-* The report1 like:
-.. image:: https://raw.github.com/wcc526/cloudsafe/master/docs/img/screenshots/report1.png
-* The report2 like:
-.. image:: https://raw.github.com/wcc526/cloudsafe/master/docs/img/screenshots/report2.png
-* The scan queue like:
-.. image:: https://raw.github.com/wcc526/cloudsafe/master/docs/img/screenshots/queue.png
+* 主界面:
+.. image:: https://raw.github.com/wcc526/ecard/master/docs/img/screenshots/1.png
+* 选择贺卡模板:
+.. image:: https://raw.github.com/wcc526/ecard/master/docs/img/screenshots/2.png
+* 制作贺卡:
+.. image:: https://raw.github.com/wcc526/ecard/master/docs/img/screenshots/3.png
+* 预览贺卡:
+.. image:: https://raw.github.com/wcc526/ecard/master/docs/img/screenshots/4.png
 
 Demo
 --------
