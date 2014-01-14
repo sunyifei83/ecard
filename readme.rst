@@ -12,20 +12,20 @@ ecard 电子贺卡服务平台
 .. image:: https://pypip.in/d/ecard/badge.png
     :target: https://crate.io/packages/ecard/
 
-Overview
+前言
 --------
 ecard 电子贺卡服务平台
 用来在线发送自定义的电子贺卡
 
 
-Requirements
+安装要求
 --------
-- os system:linux ubuntu
+- linux or ubuntu
 - python 2.6 or 2.7
 - django (1.5+)
 
 
-Sceenshots
+功能截图
 --------
 
 * 主界面:
@@ -37,63 +37,56 @@ Sceenshots
 * 预览贺卡:
 .. image:: https://raw.github.com/wcc526/ecard/master/docs/img/screenshots/4.png
 
-Demo
+在线demo
 --------
-There's a demo at http://cloudsafe.ihep.ac.cn, Note: it only visit from the ihep intranet now!
+可访问在线网站http://ecard.ihpe.ac.cn
 
 
-Installation
+安装必要包
 --------
 
 - 1.download:
-django_admin_bootstrapped 
-bootstrap_toolkit
+
 from pypi::
 
-    $ pip install cloudsafe
+    $ pip install ecard 
 
 or::
 
-    $ easy_install cloudsafe
+    $ easy_install ecard 
 
 or clone from github::
 
-    $ git clone https://github.com/wcc526/cloudsafe.git
+    $ git clone https://github.com/wcc526/ecard.git
 
-- 2.you can run with this steps:: 
+- 2.必要的包:: 
 
-    $ python manage.py runserver 0.0.0.0:80
-
-The basic username is root,password is toor
+    django_admin_bootstrapped 
+    bootstrap_toolkit
+    apt-get install imagemagick  
+    apt-get install python-pythonmagick  
 
 enjoy it!
 
 Documentation
 --------
 
-You can find more in the documentation at `http://cloudsafe.readthedocs.org/ <http://cloudsafe.readthedocs.org/>`_
+注意目前该版本并没有提供完整版的代码,只提供了实现的核心代码，仅供参考。
+
+You can find more in the documentation at `http://ecard.readthedocs.org/ <http://ecard.readthedocs.org/>`_
 
 Contact
 --------
 
-* 1.IRC channel: ``#cloudsafe``, on irc.freenode.net 
+* 1.IRC channel: ``#ecard``, on irc.freenode.net 
 * 2.contact me: wcc526@gmail.com or 949409306@qq.com
 * 4.QQ群:260816512
-
-What will be the next features?
---------
-
-I will add more functions,like:
-
-* more powerful report for the statistics
-* now the basic language is chinese,I will support english,spanlish
-* distributed
 
 Thanks to
 --------
 
 * my teachers `@高能老黄牛 <http://weibo.com/u/2406562641>`_ `@crist齐 <http://weibo.com/u/1402163021>`_
 
-.. image:: https://d2weczhvl823v0.cloudfront.net/wcc526/cloudsafe/trend.png
+.. image:: https://d2weczhvl823v0.cloudfront.net/wcc526/ecard/trend.png
     :alt: Bitdeli badge
         :target: https://bitdeli.com/free`
